@@ -234,7 +234,4 @@ footer .legal{margin-top:54px;padding-top:24px;border-top:1px solid var(--navy-2
 .photo-band .wrap{position:relative;z-index:1;display:grid;justify-items:center;gap:22px}
 .photo-band h2{max-width:820px}
 .photo-band p{font-size:clamp(18px,1.6vw,21px);color:#E2E8F0;max-width:620px}
-.how .workflow{margin-top:36px;border-radius:16px;border:1px solid var(--line);box-shadow:var(--shadow)}
-.why-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.why-art{border-radius:18px;box-shadow:var(--shadow)}
-@media (max-width:900px){.why-head{grid-template-columns:1fr}.photo-band{padding:100px 0}}
+@media (max-width:900px){.photo-band{padding:100px 0}}
