@@ -18,6 +18,20 @@
     $$('.alt[data-mo]').forEach(el=>{ el.textContent=el.dataset[p]; });
   }));
 
+  // pricing: Auditor (desktop + Site Capture) or Site Capture only
+  $$('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+    $$('.tabs button').forEach(x=>{ const on=x===b; x.classList.toggle('on',on); x.setAttribute('aria-selected',on); });
+    $$('.tier-panel').forEach(p=>{ p.hidden=p.dataset.panel!==b.dataset.product; });
+  }));
+  // a link to #pricing-sc opens the Site Capture tab
+  if(location.hash==='#pricing-sc'){ const t=$('.tabs button[data-product=sc]'); if(t){ t.click(); $('#pricing').scrollIntoView(); } }
+
+  // Site Capture screens: the arrows scroll the strip by most of its width
+  const shots=$('#shots');
+  $$('.shots-nav button').forEach(b=>b.addEventListener('click',()=>{
+    shots.scrollBy({left:Number(b.dataset.dir)*shots.clientWidth*0.8,behavior:'smooth'});
+  }));
+
   // the orange fan in "How it works": lines from one point out to a vertical spread
   const fan=$('#fan');
   if(fan){

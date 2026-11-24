@@ -16,7 +16,7 @@
 <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/lato-black.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css?v=2">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -168,29 +168,110 @@
 <!-- ===================== SITE CAPTURE ===================== -->
 <section class="sc" id="site-capture">
   <div class="wrap">
-    <div class="reveal">
-      <p class="eyebrow">Site Capture</p>
-      <h2 style="margin-top:16px">Quicker on site<span class="dot">.</span> Faster reporting<span class="dot">.</span></h2>
-      <p class="lead" style="margin-top:22px">The field companion to Auditor. Photograph each item against your template's categories and assets, fill in its fields on the spot, and leave site with every photo filed.</p>
-      <ul class="checklist">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Build a template from a spreadsheet, or start from a ready-made one</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Capture and export work offline</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Export a single file for Auditor, or a PDF report straight from the phone</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Included with every Auditor plan</li>
-      </ul>
-      <div class="platforms">
-        <a class="btn btn-ink btn-blue" href="https://play.google.com/store/apps/details?id=com.auditor.sitecapture" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.5v19l10.5-9.5L4 2.5zm12 8l2.6-2.4L6.3 1.3l9.7 9.2zm0 3l-9.7 9.2 12.3-6.8L16 13.5zm4-3.6l-2.4-1.4-2.6 2.5 2.6 2.5 2.4-1.4c.8-.5.8-1.7 0-2.2z"/></svg>
-          Android · Google Play</a>
-        <a class="btn btn-ghost" href="https://sitecapture.theauditorapp.com/" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
-          iPhone &amp; iPad · open in Safari</a>
+    <div class="sc-intro">
+      <div class="reveal">
+        <p class="eyebrow">Site Capture</p>
+        <h2 style="margin-top:16px">One building<span class="dot">.</span> One walk<span class="dot">.</span> One report<span class="dot">.</span></h2>
+        <p class="lead" style="margin-top:22px">Start from a template, walk the building as a checklist, shoot against each asset, add the data on the spot, and build the report before you leave.</p>
+        <div class="platforms">
+          <a class="btn btn-blue" href="https://play.google.com/store/apps/details?id=com.auditor.sitecapture" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 2.5v19l10.5-9.5L4 2.5zm12 8l2.6-2.4L6.3 1.3l9.7 9.2zm0 3l-9.7 9.2 12.3-6.8L16 13.5zm4-3.6l-2.4-1.4-2.6 2.5 2.6 2.5 2.4-1.4c.8-.5.8-1.7 0-2.2z"/></svg>
+            Android · Google Play</a>
+          <a class="btn btn-ghost" href="https://sitecapture.theauditorapp.com/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+            iPhone &amp; iPad · open in Safari</a>
+        </div>
+        <div class="sc-facts">
+          <div><b>4</b><span>inspection templates included</span></div>
+          <div><b>837</b><span>ready-made checklist items</span></div>
+          <div><b>0</b><span>accounts or sign-ins</span></div>
+        </div>
+        <p class="small-note">Free to download, with unlimited projects and photos and full export. On iPhone and iPad, open it in Safari and add it to your Home Screen.</p>
       </div>
-      <p class="small-note">Free to download. On iPhone and iPad, open it in Safari and add it to your Home Screen.</p>
+      <figure class="sc-video reveal">
+        <video controls preload="none" playsinline poster="assets/video/poster.jpg" width="720" height="1280">
+          <source src="assets/video/site-capture-in-a-minute.mp4" type="video/mp4">
+        </video>
+        <figcaption>Site Capture in a minute</figcaption>
+      </figure>
     </div>
-    <div class="phones reveal">
-      <img src="assets/img/asset-list.webp" alt="Site Capture: assets grouped by category" width="520" height="1128" loading="lazy">
-      <img src="assets/img/photo-fields.webp" alt="Site Capture: a photo with its data fields" width="520" height="1128" loading="lazy">
+  </div>
+
+  <div class="shots-wrap">
+    <div class="shots" id="shots" tabindex="0" aria-label="Site Capture screens">
+      <figure><img src="assets/img/sc-01-every-shot-filed.webp" alt="Every shot filed as you take it: pick the asset, then just keep shooting" width="1600" height="900" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-02-add-the-data.webp" alt="Add the data beside the photo: condition, severity and priority, a tap each" width="1600" height="900" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-08-checklist.webp" alt="The whole building as a checklist: every asset by category, with its progress" width="720" height="1280" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-03-scan-a-nameplate.webp" alt="Scan a nameplate into a field: tap the text on the photo, no typing" width="1600" height="900" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-05-asset-match.webp" alt="Asset Match, the AI photo sorter: it ranks every asset for an unfiled photo" width="720" height="1280" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-04-mark-up.webp" alt="Mark up what matters: arrows, labels and measurements, the original is kept" width="1600" height="900" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-06-reports.webp" alt="PDF and Excel reports, built on the phone and shared before you leave the site" width="720" height="1280" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-07-templates.webp" alt="Four inspection templates included: home, construction, building condition and accessibility" width="720" height="1280" loading="lazy"></figure>
+      <figure><img src="assets/img/sc-09-your-brand.webp" alt="Your brand on the report: your colours, logo, title and footer, with a licence" width="720" height="1280" loading="lazy"></figure>
+    </div>
+    <div class="shots-nav">
+      <button type="button" data-dir="-1" aria-label="Previous screens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button type="button" data-dir="1" aria-label="Next screens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="sc-grid">
+      <article class="sc-card reveal">
+        <h3>Four templates, included</h3>
+        <ul>
+          <li><b>Construction Inspection:</b> 177 checks across 19 phases in build order, 87 flagged as hold points</li>
+          <li><b>Home Inspection:</b> 181 items across 9 areas, from foundations to attics</li>
+          <li><b>Building Condition Assessment:</b> 285 assets by UNIFORMAT system, with useful life and unit price</li>
+          <li><b>Accessibility Assessment:</b> 194 items across 15 areas, with what to measure</li>
+        </ul>
+      </article>
+      <article class="sc-card reveal">
+        <h3>Capture on site</h3>
+        <ul>
+          <li>A camera built for inspections: switch categories from a side rail and keep shooting</li>
+          <li>Quick shot mode, with no review between photos</li>
+          <li>File each photo as you take it, or sort it later</li>
+          <li>Fields that calculate as you type, like a cost from quantity and unit price</li>
+          <li>Scan the text on a label or nameplate straight into a field</li>
+          <li>Works offline, with no account or sign-in</li>
+        </ul>
+      </article>
+      <article class="sc-card reveal">
+        <h3>Mark up a photo</h3>
+        <ul>
+          <li>Draw, box, circle, arrow and caption</li>
+          <li>Set a scale from a known length, then measure anything else in the photo</li>
+          <li>Crop and rotate. The original photo is never overwritten</li>
+        </ul>
+      </article>
+      <article class="sc-card reveal">
+        <h3>Reports from the phone</h3>
+        <ul>
+          <li>A PDF report with a cover, your project information and every item with its photos</li>
+          <li>An Excel report where costs and quantities arrive as numbers, ready to total</li>
+          <li>Share them to WhatsApp, email or any app before you leave</li>
+          <li>A map file with one pin per item, for Google Earth</li>
+        </ul>
+      </article>
+      <article class="sc-card reveal">
+        <h3>Stay organised</h3>
+        <ul>
+          <li>Group projects and tag them by colour</li>
+          <li>File photos into folders by category, item or any field</li>
+          <li>Asset Match, an optional AI photo sorter, suggests where an unfiled photo belongs</li>
+          <li>In English or Spanish</li>
+        </ul>
+      </article>
+      <article class="sc-card reveal">
+        <h3>Your data stays yours</h3>
+        <ul>
+          <li>Everything you capture is stored on your device</li>
+          <li>No ads, no analytics and no trackers</li>
+          <li>You choose when and where to export</li>
+          <li>Only Asset Match and Google Lens use the internet, and only when you tap them</li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
@@ -202,7 +283,13 @@
       <div>
         <p class="eyebrow">Pricing</p>
         <h2 style="margin-top:16px">Choose the plan that fits your growth<span class="dot">.</span></h2>
-        <p class="lead" style="margin-top:16px">No hidden fees, no surprises. Every desktop plan starts with a 2-week free trial.</p>
+        <p class="lead" style="margin-top:16px">The full Auditor workflow, desktop reporting with Site Capture included, or Site Capture on its own. No hidden fees, no surprises.</p>
+      </div>
+    </div>
+    <div class="price-controls">
+      <div class="tabs" role="tablist" aria-label="Product">
+        <button type="button" role="tab" class="on" aria-selected="true" data-product="auditor">Auditor <span>desktop + Site Capture</span></button>
+        <button type="button" role="tab" aria-selected="false" data-product="sc">Site Capture only <span>field app</span></button>
       </div>
       <div class="toggle" role="group" aria-label="Billing period">
         <button type="button" class="on" data-period="mo">Monthly</button>
@@ -210,97 +297,160 @@
       </div>
     </div>
 
-    <div class="plans">
-      <div class="plan reveal">
-        <div class="name">Solo</div>
-        <div class="price" data-mo="$45" data-yr="$449"><span class="amt">$45</span> <small class="per">/mo</small></div>
-        <div class="alt" data-mo="or $449 a year" data-yr="about $37 a month">or $449 a year</div>
-        <p class="desc">For independent building science consultants, freelance professionals and sole proprietors.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>One user seat</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Standard templates</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Site Capture licence included</li>
-        </ul>
-        <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_JbKtZjSbwEdXYIhVCVM1MZjR4mJwmCiYzlI8T2CGmx0" target="_blank" rel="noopener">Start free trial</a>
+    <!-- Auditor: desktop + Site Capture -->
+    <div class="tier-panel" data-panel="auditor" role="tabpanel">
+      <div class="plans">
+        <div class="plan">
+          <div class="name">Solo</div>
+          <div class="price" data-mo="$45" data-yr="$449"><span class="amt">$45</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $449 a year" data-yr="about $37 a month">or $449 a year</div>
+          <p class="desc">For independent building science consultants, freelance professionals and sole proprietors.</p>
+          <ul>
+            <li class="feat">One user seat</li>
+            <li class="feat">Standard templates</li>
+            <li class="feat">Site Capture licence included</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_JbKtZjSbwEdXYIhVCVM1MZjR4mJwmCiYzlI8T2CGmx0" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan">
+          <div class="name">Small Team</div>
+          <div class="price" data-mo="$175" data-yr="$1,749"><span class="amt">$175</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $1,749 a year" data-yr="about $146 a month">or $1,749 a year</div>
+          <p class="desc">For boutique advisory firms and specialized contracting businesses.</p>
+          <ul>
+            <li class="feat">Up to 5 user seats</li>
+            <li class="feat">Standard templates</li>
+            <li class="feat">User management</li>
+            <li class="feat">Site Capture licences included</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan feature">
+          <div class="name">Medium Team</div>
+          <div class="price" data-mo="$325" data-yr="$3,249"><span class="amt">$325</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $3,249 a year" data-yr="about $271 a month">or $3,249 a year</div>
+          <p class="desc">For growing regional firms and mid-sized departments with a steady volume of assessments.</p>
+          <ul>
+            <li class="feat">Up to 10 user seats</li>
+            <li class="feat">Standard templates</li>
+            <li class="feat">User management</li>
+            <li class="feat">Site Capture licences included</li>
+          </ul>
+          <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan">
+          <div class="name">Growth Team</div>
+          <div class="price" data-mo="$450" data-yr="$4,499"><span class="amt">$450</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $4,499 a year" data-yr="about $375 a month">or $4,499 a year</div>
+          <p class="desc">For expanding regional consultancies juggling multiple large-scale assessments.</p>
+          <ul>
+            <li class="feat">Up to 15 user seats</li>
+            <li class="feat">Standard templates</li>
+            <li class="feat">User management</li>
+            <li class="feat">Site Capture licences included</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
+        </div>
       </div>
-      <div class="plan reveal">
-        <div class="name">Small Team</div>
-        <div class="price" data-mo="$175" data-yr="$1,749"><span class="amt">$175</span> <small class="per">/mo</small></div>
-        <div class="alt" data-mo="or $1,749 a year" data-yr="about $146 a month">or $1,749 a year</div>
-        <p class="desc">For boutique advisory firms and specialized contracting businesses.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Up to 5 user seats</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Standard templates</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>User management</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Site Capture licences included</li>
-        </ul>
-        <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
+      <div class="plans-2">
+        <div class="plan wide">
+          <div class="name">Enterprise</div>
+          <div class="price">Custom pricing</div>
+          <p class="desc">For national facilities management companies and large corporate real estate portfolios.</p>
+          <ul>
+            <li class="feat">15+ or unlimited seats</li>
+            <li class="feat">Personalized templates</li>
+            <li class="feat">User management and priority support</li>
+            <li class="feat">Site Capture licences included</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        </div>
+        <div class="plan wide">
+          <div class="name">Workflow Developer</div>
+          <div class="price">Custom pricing</div>
+          <p class="desc">Template customization and implementation, adapting Auditor to your firm's proprietary reporting standards.</p>
+          <ul>
+            <li class="feat">Branding implementation</li>
+            <li class="feat">Automation features</li>
+            <li class="feat">Professional support</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Talk to us</a>
+        </div>
       </div>
-      <div class="plan feature reveal">
-        <div class="name">Medium Team</div>
-        <div class="price" data-mo="$325" data-yr="$3,249"><span class="amt">$325</span> <small class="per">/mo</small></div>
-        <div class="alt" data-mo="or $3,249 a year" data-yr="about $271 a month">or $3,249 a year</div>
-        <p class="desc">For growing regional firms and mid-sized departments with a steady volume of assessments.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Up to 10 user seats</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Standard templates</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>User management</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Site Capture licences included</li>
-        </ul>
-        <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
-      </div>
-      <div class="plan reveal">
-        <div class="name">Growth Team</div>
-        <div class="price" data-mo="$450" data-yr="$4,499"><span class="amt">$450</span> <small class="per">/mo</small></div>
-        <div class="alt" data-mo="or $4,499 a year" data-yr="about $375 a month">or $4,499 a year</div>
-        <p class="desc">For expanding regional consultancies juggling multiple large-scale assessments.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Up to 15 user seats</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Standard templates</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>User management</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Site Capture licences included</li>
-        </ul>
-        <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_E2WxOHshm1D4HP0MMXBcdv28IlHByxonjCTG31pAnPd" target="_blank" rel="noopener">Start free trial</a>
-      </div>
+      <p class="price-note">Every plan starts with a 2-week free trial. Prices in Canadian dollars, plus applicable tax. Template customization is billed separately as a one-time setup fee.</p>
     </div>
 
-    <div class="plans-2">
-      <div class="plan wide reveal">
-        <div class="name">Enterprise</div>
-        <div class="price">Custom pricing</div>
-        <p class="desc">For national facilities management companies and large corporate real estate portfolios.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>15+ or unlimited seats</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Personalized templates</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>User management and priority support</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+    <!-- Site Capture only -->
+    <div class="tier-panel" data-panel="sc" role="tabpanel" hidden>
+      <div class="plans">
+        <div class="plan">
+          <div class="name">Solo</div>
+          <div class="price" data-mo="$14.99" data-yr="$149.99"><span class="amt">$14.99</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $149.99 a year" data-yr="about $12.50 a month">or $149.99 a year</div>
+          <p class="desc">For one inspector working on their own phone and tablet.</p>
+          <ul>
+            <li class="feat">1 user, up to 2 devices</li>
+            <li class="feat">Your own templates, from Excel or the desktop app</li>
+            <li class="feat">Your branding on the PDF report</li>
+            <li class="feat">Android, iPhone and iPad</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_Sl9wI0p3I4CQdBHfrKgtfkNXvUAzQWOetJlum3UaJC2" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan">
+          <div class="name">Small Team</div>
+          <div class="price" data-mo="$57.99" data-yr="$579.99"><span class="amt">$57.99</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $579.99 a year" data-yr="about $48 a month">or $579.99 a year</div>
+          <p class="desc">For boutique firms and small field crews.</p>
+          <ul>
+            <li class="feat">Up to 5 devices</li>
+            <li class="feat">Your own templates, from Excel or the desktop app</li>
+            <li class="feat">Your branding on the PDF report</li>
+            <li class="feat">Android, iPhone and iPad</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_Sl9wI0p3I4CQdBHfrKgtfkNXvUAzQWOetJlum3UaJC2" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan feature">
+          <div class="name">Medium Team</div>
+          <div class="price" data-mo="$107.99" data-yr="$1,079.99"><span class="amt">$107.99</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $1,079.99 a year" data-yr="about $90 a month">or $1,079.99 a year</div>
+          <p class="desc">For growing firms with a steady volume of site visits.</p>
+          <ul>
+            <li class="feat">Up to 10 devices</li>
+            <li class="feat">Your own templates, from Excel or the desktop app</li>
+            <li class="feat">Your branding on the PDF report</li>
+            <li class="feat">Android, iPhone and iPad</li>
+          </ul>
+          <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_Sl9wI0p3I4CQdBHfrKgtfkNXvUAzQWOetJlum3UaJC2" target="_blank" rel="noopener">Start free trial</a>
+        </div>
+        <div class="plan">
+          <div class="name">Growth Team</div>
+          <div class="price" data-mo="$149.99" data-yr="$1,499.99"><span class="amt">$149.99</span> <small class="per">/mo</small></div>
+          <div class="alt" data-mo="or $1,499.99 a year" data-yr="about $125 a month">or $1,499.99 a year</div>
+          <p class="desc">For regional consultancies running several large assessments at once.</p>
+          <ul>
+            <li class="feat">Up to 15 devices</li>
+            <li class="feat">Your own templates, from Excel or the desktop app</li>
+            <li class="feat">Your branding on the PDF report</li>
+            <li class="feat">Android, iPhone and iPad</li>
+          </ul>
+          <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_Sl9wI0p3I4CQdBHfrKgtfkNXvUAzQWOetJlum3UaJC2" target="_blank" rel="noopener">Start free trial</a>
+        </div>
       </div>
-      <div class="plan wide reveal">
-        <div class="name">Workflow Developer</div>
-        <div class="price">Custom pricing</div>
-        <p class="desc">Template customization and implementation, adapting Auditor to your firm's proprietary reporting standards.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Branding implementation</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Automation features</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Professional support</li>
-        </ul>
-        <a class="btn btn-ghost" href="#contact">Talk to us</a>
+      <div class="plans-2 one">
+        <div class="plan wide free">
+          <div>
+            <div class="name">Free version</div>
+            <div class="price">$0</div>
+          </div>
+          <p class="desc">Free to download. Capture and export are the same on every version: all four included templates, unlimited projects and photos, and the PDF and Excel reports.</p>
+          <div class="free-ctas">
+            <a class="btn btn-blue" href="https://play.google.com/store/apps/details?id=com.auditor.sitecapture" target="_blank" rel="noopener">Google Play</a>
+            <a class="btn btn-ghost" href="https://sitecapture.theauditorapp.com/" target="_blank" rel="noopener">iPhone &amp; iPad</a>
+          </div>
+        </div>
       </div>
-      <div class="plan wide reveal">
-        <div class="name">Site Capture only</div>
-        <div class="price" data-mo="$14.99" data-yr="$149.99"><span class="amt">$14.99</span> <small class="per">/mo</small></div>
-        <div class="alt" data-mo="Solo · team plans available" data-yr="Solo · team plans available">Solo · team plans available</div>
-        <p class="desc">For field staff who don't need the desktop app. Build a template from a spreadsheet, capture on site, and export.</p>
-        <ul>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Android, iPhone and iPad</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Your own templates and report branding</li>
-          <li class="feat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>1-month free trial</li>
-        </ul>
-        <a class="btn btn-blue" href="https://buy.polar.sh/polar_cl_Sl9wI0p3I4CQdBHfrKgtfkNXvUAzQWOetJlum3UaJC2" target="_blank" rel="noopener">Start free trial</a>
-      </div>
+      <p class="price-note">Every plan starts with a 1-month free trial. Solo is also sold inside the Android app through Google Play at the same price. Prices in Canadian dollars, plus applicable tax.</p>
     </div>
-    <p class="price-note">Prices in Canadian dollars, plus applicable tax. Template customization is billed separately as a one-time setup fee.</p>
   </div>
 </section>
 
@@ -404,6 +554,6 @@
   </div>
 </footer>
 
-<script src="assets/site.js" defer></script>
+<script src="assets/site.js?v=2" defer></script>
 </body>
 </html>
